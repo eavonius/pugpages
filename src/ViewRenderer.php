@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace PugPages;
 
-use function Env\env;
+//use function Env\env;
 
 /**
  * Renders a pug view.

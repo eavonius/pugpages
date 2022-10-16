@@ -1,20 +1,30 @@
 {
-    "name": "pugpages/wordpress",
-    "description": "A simple framework for MVC pug pages in wordpress.",
-    "type": "library",
-    "autoload": {
-      "psr-4": {
-        "PugPages\\": "src/"
-      }
-    },
-    "authors": [
-      {
-        "name": "Jayme Edwards",
-        "email": "jayme.edwards@gmail.com"
-      }
-    ],
-    "require": {
-      "php": ">= 7.4"
+  "name": "pugpages/wordpress",
+  "description": "A simple framework for MVC pug pages in wordpress.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "PugPages\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Jayme Edwards",
+      "email": "jayme.edwards@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*"
+      ]
+    }
+  ],
+  "require": {
+    "php": ">= 7.4",
+    "pug-php/pug": "^3",
+    "wpackagist-plugin/timber-library": "^1.18.2"
   }
-  
+}
