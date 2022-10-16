@@ -14,14 +14,35 @@ Your site must be using a custom wordpress theme into which you can add code tha
 
 ## Installation
 
-1. Use [composer](https://getcomposer.org/) to install pugpages into your wordpress website:
+1. Add the main branch of pugpages to the _repositories_ section of your `composer.json` file:
+   <br />
+   ```json
+   "repositories": [
+     // Other repositories may be included earlier etc...
+     {
+       "type": "git",
+       "url": "https://github.com/eavonius/pugpages"
+     }
+   ],
+   ```
 
+1. Add `pugpages/wordpress` to your dependencies under the _require_ section of your `composer.json` file:
+   <br />
+   ```json
+   "require": {
+     // Other dependencies may be included earlier etc...
+     "pugpages/wordpress": "dev-main"
+   }
+   ```
+
+1. Use [composer](https://getcomposer.org/) to update your dependencies:
+   <br />
    ```bash
-   composer install pugpages/wordpress
+   composer update
    ```
 
 1. In the root directory of your site's theme, edit your `functions.php` file and add the line:
-
+   <br />
    ```php
    \PugPages\PageLoader::hook(
        get_stylesheet_directory(),
