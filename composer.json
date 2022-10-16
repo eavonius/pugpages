@@ -1,0 +1,20 @@
+{
+    "name": "pugpages/wordpress",
+    "description": "A simple framework for MVC pug pages in wordpress.",
+    "type": "library",
+    "autoload": {
+      "psr-4": {
+        "PugPages\\": "src/"
+      }
+    },
+    "authors": [
+      {
+        "name": "Jayme Edwards",
+        "email": "jayme.edwards@gmail.com"
+      }
+    ],
+    "require": {
+      "php": ">= 7.4"
+    }
+  }
+  
