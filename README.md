@@ -8,7 +8,7 @@ Views are created using [phug](https://phug-lang.com/) which is a derivative of 
 
 # Getting Started
 
-Pugpages was used with a wordpress site created with [roots bedrock](https://roots.io/bedrock/), thought it may be used in any wordpress website with adaptation.
+Pugpages was used with a wordpress site created with [roots bedrock](https://roots.io/bedrock/), though it may be used in any wordpress website with adaptation.
 
 Your site must be using a custom wordpress theme into which you can add code that works with pugpages.
 
