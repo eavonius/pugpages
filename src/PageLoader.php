@@ -20,6 +20,13 @@ class PageLoader
         $pugPagesThemeDir = $themeDir;
         $pugPagesOptimized = $optimized;
 
+        add_filter('sidebar_template', function($template) {
+            return self::getPageOrTemplate(
+                ['/pages/Sidebar.php'],
+                $template
+            );
+        });
+
         add_filter('index_template', function ($template) {
 
             return self::getPageOrTemplate(
